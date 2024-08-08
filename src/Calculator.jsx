@@ -48,7 +48,9 @@ export default function Calculator() {
         setValueOperation('')
     }
 
-    return <div className="calculator-root">
+    return <div className="calculator-root"><div>
+        
+    </div>
         <div className="calculator-section secondary-text-display-container">
             <TextDisplay value={valueSecondary} className={"secondary-text-display"}></TextDisplay>
         </div>

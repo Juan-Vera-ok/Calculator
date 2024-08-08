@@ -1,6 +1,4 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
+
 
 .App {
   text-align: center;
@@ -47,36 +45,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: darkgrey;
   overflow-y:auto
 }
 
 .calculator-root{
   background-color: white;
-
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  font-family: monospace;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calculator-main-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
 }
 
 .calculator-section{
-  padding: 5px;
-  background-color: wheat;
+  padding: 2px;
+  background-color: lightgray;
   display: flex;
   border:1px solid black;
 }
 
 .text-display{
+  color: green;
   height: 30px;
-  background-color: red;
+  background-color: rgb(31, 31, 31);
   box-sizing: border-box;
   padding: 5px;
   text-align: right;
+  border-radius: 5px;
 }
 
 .primary-text-display{
   width: 100%;
-  background-color: blue;
 }
 
 .secondary-text-display{
