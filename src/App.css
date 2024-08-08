@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.super-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  overflow-y:auto
+}
+
+.calculator-root{
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.calculator-section{
+  padding: 5px;
+  background-color: wheat;
+  display: flex;
+  border:1px solid black;
+}
+
+.text-display{
+  height: 30px;
+  background-color: red;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: right;
+}
+
+.primary-text-display{
+  width: 100%;
+  background-color: blue;
+}
+
+.secondary-text-display{
+  width: 70px;
+}
+
+.secondary-text-display-container{
+  justify-content: right;
+}
+
+.controls-container{
+  display: flex;
+}
+
+.number-inputs-container{
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  line-height: 0;
+}
+
+.operation-inputs-container{
+
+  flex-direction: column;
+  
 }
